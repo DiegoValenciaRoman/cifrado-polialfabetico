@@ -7,6 +7,7 @@
 ### ejecutar en desarrollo
 
 npm start
+
 abrir [http://localhost:3000](http://localhost:3000) para ver en el navegador.
 
 ### compilar para produccion
