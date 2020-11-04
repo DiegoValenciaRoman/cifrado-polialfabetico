@@ -160,6 +160,7 @@ function App() {
   const handleChange = (e) => {
     let aux = form;
     e.target.value = e.target.value.toUpperCase();
+    console.log(e.target.value.toUpperCase());
     form[e.target.id] = e.target.value;
     setForm(aux);
     console.log(e.target.value);
