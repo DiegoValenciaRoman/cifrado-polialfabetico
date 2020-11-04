@@ -49,7 +49,7 @@ function App() {
   const transformSecuenceToKValues = (secuenceArray, k1, k2) => {
     //console.log(secuenceArray, "\nk1:", k1, "\nk2:", k2);
     return secuenceArray.map((sec) => {
-      if (sec === "c1") {
+      if (sec === "C1" || sec === "c1") {
         return Number(k1);
       } else {
         return Number(k2);
@@ -303,7 +303,8 @@ function App() {
             Resultado encriptado:<p>{textoEncriptadoFinal}</p>
           </Col>
           <Col xs>
-            Resultado descifrado <p>{textoDesencriptadoFinal}</p>
+            Resultado descifrado{" "}
+            <p>{textoDesencriptadoFinal.replaceAll("X", " ")}</p>
           </Col>
         </Row>
       </Container>
